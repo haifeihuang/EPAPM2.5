@@ -1,0 +1,4 @@
+load("/Users/Huey/Downloads/NEI_data/Source_Classification_Code.rds")
+load("/Users/Huey/Downloads/NEI_data/summarySCC_PM25.rds")
+getwd()
+load("/Users/Huey/datasciencecoursera/NEI_data/Source_Classification_Code.rds")
