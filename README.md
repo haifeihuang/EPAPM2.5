@@ -16,22 +16,6 @@ The zip file contains two files:
 
 PM2.5 Emissions Data (𝚜𝚞𝚖𝚖𝚊𝚛𝚢𝚂𝙲𝙲_𝙿𝙼𝟸𝟻.𝚛𝚍𝚜): This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of tons of PM2.5 emitted from a specific type of source for the entire year. Here are the first few rows.
 
-
-
-1
-2
-3
-4
-5
-6
-7
-##     fips      SCC Pollutant Emissions  type year
-## 4  09001 10100401  PM25-PRI    15.714 POINT 1999
-## 8  09001 10100404  PM25-PRI   234.178 POINT 1999
-## 12 09001 10100501  PM25-PRI     0.128 POINT 1999
-## 16 09001 10200401  PM25-PRI     2.036 POINT 1999
-## 20 09001 10200504  PM25-PRI     0.388 POINT 1999
-## 24 09001 10200602  PM25-PRI     1.490 POINT 1999
 𝚏𝚒𝚙𝚜: A five-digit number (represented as a string) indicating the U.S. county
 𝚂𝙲𝙲: The name of the source as indicated by a digit string (see source code classification table)
 𝙿𝚘𝚕𝚕𝚞𝚝𝚊𝚗𝚝: A string indicating the pollutant
@@ -42,12 +26,6 @@ Source Classification Code Table (𝚂𝚘𝚞𝚛𝚌𝚎_𝙲𝚕𝚊𝚜𝚜�
 
 You can read each of the two files using the 𝚛𝚎𝚊𝚍𝚁𝙳𝚂() function in R. For example, reading in each file can be done with the following code:
 
-
-
-1
-2
-3
-## This first line will likely take a few seconds. Be patient!
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 as long as each of those files is in your current working directory (check by calling 𝚍𝚒𝚛() and see if those files are in the listing).
